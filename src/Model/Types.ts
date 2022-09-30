@@ -8,7 +8,7 @@ import type {
   ServiceErrorException,
   ServiceError,
 } from '@txo/service-prop'
-import React from 'react'
+import type React from 'react'
 
 export type ContextServiceErrorExceptionMap = Record<string, ServiceErrorException>
 
