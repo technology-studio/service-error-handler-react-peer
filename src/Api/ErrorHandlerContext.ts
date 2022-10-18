@@ -4,7 +4,7 @@
  * @Copyright: Technology Studio
 **/
 
-import React from 'react'
+import { createContext } from 'react'
 import type {
   ServiceErrorException,
 } from '@txo/service-prop'
@@ -15,7 +15,7 @@ type Context = {
   removeAllServiceErrors: () => void,
 }
 
-export const ErrorHandlerContext = React.createContext<Context>({
+export const ErrorHandlerContext = createContext<Context>({
   addServiceErrorException: () => undefined,
   removeServiceErrorException: () => undefined,
   removeAllServiceErrors: () => undefined,
