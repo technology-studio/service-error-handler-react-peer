@@ -1,3 +1,10 @@
+## [1.2.6](https://github.com/technology-studio/service-error-handler-react-peer/compare/v1.2.5...v1.2.6) (2023-07-21)
+
+
+### Bug fixes
+
+* **deps:** update dependency @txo/log to ^2.0.5 ([e94c3fa](https://github.com/technology-studio/service-error-handler-react-peer/commit/e94c3fa9a449eff92f6c0d540170b585da858741))
+
 ## [1.2.5](https://github.com/technology-studio/service-error-handler-react-peer/compare/v1.2.4...v1.2.5) (2023-07-21)
 
 
