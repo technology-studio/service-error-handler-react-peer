@@ -1,3 +1,10 @@
+## [1.2.16](https://github.com/technology-studio/service-error-handler-react-peer/compare/v1.2.15...v1.2.16) (2023-07-24)
+
+
+### Bug fixes
+
+* **deps:** update dependency @txo/service-prop to ^2.2.10 ([4a22405](https://github.com/technology-studio/service-error-handler-react-peer/commit/4a22405c4f4fa5094365761e6756089ef7e600e9))
+
 ## [1.2.15](https://github.com/technology-studio/service-error-handler-react-peer/compare/v1.2.14...v1.2.15) (2023-07-24)
 
 
