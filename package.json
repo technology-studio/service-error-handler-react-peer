@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "@txo/log": "^2.0.14",
-    "@txo/service-prop": "^2.2.14"
+    "@txo/service-prop": "^2.2.15"
   },
   "peerDependencies": {
     "react": "^18.2.0"
