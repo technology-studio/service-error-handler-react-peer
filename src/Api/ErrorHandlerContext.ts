@@ -6,17 +6,13 @@
 
 import { createContext } from 'react'
 import type {
-  ServiceErrorException,
+  ServiceOperationError,
 } from '@txo/service-prop'
 
 type Context = {
-  addServiceErrorException: (serviceErrorException: ServiceErrorException) => void,
-  removeServiceErrorException: (context: string) => void,
-  removeAllServiceErrors: () => void,
+  reportServiceOperationError: (serviceOperationError: ServiceOperationError) => void,
 }
 
 export const ErrorHandlerContext = createContext<Context>({
-  addServiceErrorException: () => undefined,
-  removeServiceErrorException: () => undefined,
-  removeAllServiceErrors: () => undefined,
+  reportServiceOperationError: () => undefined,
 })

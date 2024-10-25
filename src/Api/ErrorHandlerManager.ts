@@ -5,13 +5,13 @@
 **/
 
 import { Log } from '@txo/log'
-import type { ServiceErrorException } from '@txo/service-prop'
+import type { ServiceOperationError } from '@txo/service-prop'
 
 import type { ErrorHandler } from '../Model/Types'
 
 const log = new Log('@txo-peer-dep.service-error-handler-react.Api.ErrorHandlerManager')
 
-type ErrorListSubscription = (serviceErrorException: ServiceErrorException) => void
+type ErrorListSubscription = (serviceOperationError: ServiceOperationError) => void
 
 class ErrorHandlerManager {
   _handlerSequence: ErrorHandler[] | null = null
@@ -35,10 +35,10 @@ class ErrorHandlerManager {
     }
   }
 
-  emit (serviceErrorException: ServiceErrorException): void {
-    log.debug('EMIT', serviceErrorException)
+  emit (serviceOperationError: ServiceOperationError): void {
+    log.debug('EMIT', serviceOperationError)
     for (const subscription of this._subscriptionList) {
-      subscription(serviceErrorException)
+      subscription(serviceOperationError)
     }
   }
 
@@ -49,10 +49,10 @@ class ErrorHandlerManager {
     }
   }
 
-  emitMiddleware (serviceErrorException: ServiceErrorException): void {
-    log.debug('EMIT', serviceErrorException)
+  emitMiddleware (serviceOperationError: ServiceOperationError): void {
+    log.debug('EMIT', serviceOperationError)
     for (const subscription of this._middlewareSubscriptionList) {
-      subscription(serviceErrorException)
+      subscription(serviceOperationError)
     }
   }
 }

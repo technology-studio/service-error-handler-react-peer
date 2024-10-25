@@ -5,21 +5,14 @@
 **/
 
 import type {
-  ServiceErrorException,
-  ServiceError,
+  ServiceOperationError,
 } from '@txo/service-prop'
 import type React from 'react'
-
-export type ContextServiceErrorExceptionMap = Record<string, ServiceErrorException>
 
 export type ErrorHandler = (attributes: ErrorHandlerAttributes) => React.ReactNode
 
 export type ErrorHandlerAttributes = {
   children: React.ReactNode,
   next?: () => ErrorHandler,
-  contextServiceErrorExceptionMap: ContextServiceErrorExceptionMap,
-  addServiceErrorException: (serviceErrorException: ServiceErrorException) => void,
-  removeServiceErrorException: (context: string) => void,
-  removeAllServiceErrors: () => void,
-  serviceErrorList: ServiceError[],
+  reportServiceOperationError: (serviceOperationError: ServiceOperationError) => void,
 }
