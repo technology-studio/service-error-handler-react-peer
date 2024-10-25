@@ -1,12 +1,12 @@
 {
-  "name": "@txo-peer-dep/service-error-handler-react",
-  "version": "1.2.29",
-  "description": "Technology Studio - Service error handler react peer",
+  "name": "@txo-peer-dep/error-handler",
+  "version": "0.0.0",
+  "description": "Technology Studio - Error handler peer",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/technology-studio/service-error-handler-react-peer.git"
+    "url": "https://github.com/technology-studio/error-handler-peer.git"
   },
   "author": {
     "name": "Technology Studio",
@@ -36,8 +36,7 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@txo/log": "^2.0.16",
-    "@txo/service-prop": "^2.2.18"
+    "@txo/log": "^2.0.16"
   },
   "peerDependencies": {
     "react": "^18.3.1"
