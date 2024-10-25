@@ -10,7 +10,7 @@ const log = new Log('@txo-peer-dep.error-handler.Api.ErrorHandlerManager')
 
 type ErrorListener = (error: unknown) => void
 
-const errorListenerList: ErrorListener[] = []
+let errorListenerList: ErrorListener[] = []
 
 export const reportError = (error: unknown): void => {
   log.debug('REPORT ERROR', error)
@@ -21,6 +21,6 @@ export const reportError = (error: unknown): void => {
 export const subscribeErrorListener = (errorListener: ErrorListener) => {
   errorListenerList.push(errorListener)
   return () => {
-    errorListenerList.filter(listener => listener !== errorListener)
+    errorListenerList = errorListenerList.filter(listener => listener !== errorListener)
   }
 }
