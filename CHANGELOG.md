@@ -1,3 +1,21 @@
+## [2.0.0](https://github.com/technology-studio/error-handler-peer/compare/v1.2.29...v2.0.0) (2024-10-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* - cleanup react related code and simplify error handling logic
+
+### CI
+
+* add lint command for CI ([#648](https://github.com/technology-studio/error-handler-peer/issues/648)) ([7a625c0](https://github.com/technology-studio/error-handler-peer/commit/7a625c076f56c67450c0600f5cb0c9d061eb7835))
+* rename workflows ([#661](https://github.com/technology-studio/error-handler-peer/issues/661)) ([c35e415](https://github.com/technology-studio/error-handler-peer/commit/c35e415ed2abfe6958ad1eb123b98e38d284d0ed))
+* update URL for code-quality ([#654](https://github.com/technology-studio/error-handler-peer/issues/654)) ([37f09d6](https://github.com/technology-studio/error-handler-peer/commit/37f09d6fc58b1ba8c6179d1885cfda77aac4a2d6))
+
+
+### Features
+
+* remove `ErrorHandlerContext` and rename package ([#687](https://github.com/technology-studio/error-handler-peer/issues/687)) ([fd33236](https://github.com/technology-studio/error-handler-peer/commit/fd3323635908bac4b1eb21ec4025c72f2736ff82))
+
 ## [1.2.29](https://github.com/technology-studio/service-error-handler-react-peer/compare/v1.2.28...v1.2.29) (2024-04-10)
 
 
