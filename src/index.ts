@@ -4,10 +4,4 @@
  * @Copyright: Technology Studio
 **/
 
-export type {
-  ErrorHandler,
-  ErrorHandlerAttributes,
-  ContextServiceErrorExceptionMap,
-} from './Model/Types'
-export { ErrorHandlerContext } from './Api/ErrorHandlerContext'
-export { errorHandlerManager } from './Api/ErrorHandlerManager'
+export * from './Api/ErrorHandlerManager'
