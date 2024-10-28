@@ -1382,21 +1382,10 @@
     semantic-release "^23.0.8"
     semantic-release-slack-bot "^4.0.2"
 
-"@txo/service-prop@file:../com.github.technology-studio.service-prop/txo-service-prop-v3.0.0.tgz":
-  version "3.0.0"
-  resolved "file:../com.github.technology-studio.service-prop/txo-service-prop-v3.0.0.tgz#6d9fcf75b7ce444dd16084766f96ce00ea5892f7"
-  dependencies:
-    "@txo/types" "^1.7.0"
-
 "@txo/tsconfig@^1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@txo/tsconfig/-/tsconfig-1.1.1.tgz#0e746a34c5a5092459235e15588fb33e94cbf067"
   integrity sha512-YA8LdOoATb+LgwHlVFKxbR6i4xWkr1h6dGTqLh3HHGe25wYzJ7rixNNWucCXaY270Dmb33JQi5sDe6a1XtwRcg==
-
-"@txo/types@^1.7.0":
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/@txo/types/-/types-1.7.0.tgz#bb9db4417ceae237e51c14897f5c3f8b9f78cba2"
-  integrity sha512-mZfrfHMZK1hMDXKS7A8uvcBqqzYi5LLqg+wj4sDL77FZjQlZTdzXKlwwdco0HFamBPJS3iiDufW0Q/ZAyeRzSw==
 
 "@types/babel__core@^7.1.14":
   version "7.1.19"
