@@ -12,10 +12,26 @@ type ErrorListener = (error: unknown) => void
 
 let errorListenerList: ErrorListener[] = []
 
+class FatalError extends Error { }
+
 export const reportError = (error: unknown): void => {
+  if (error instanceof FatalError) {
+    return
+  }
   log.debug('REPORT ERROR', error)
+  const listenerErrorList: unknown[] = []
   for (const errorListener of errorListenerList) {
-    errorListener(error)
+    try {
+      errorListener(error)
+    } catch (error) {
+      listenerErrorList.push(error)
+    }
+  }
+  if (listenerErrorList.length > 0) {
+    listenerErrorList.push(error)
+    throw new FatalError('FATAL ERROR: Dispatching to error listeners has failed', {
+      cause: listenerErrorList,
+    })
   }
 }
 export const subscribeErrorListener = (errorListener: ErrorListener) => {
