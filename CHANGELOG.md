@@ -1,3 +1,16 @@
+## [2.0.1](https://github.com/technology-studio/error-handler-peer/compare/v2.0.0...v2.0.1) (2024-11-28)
+
+
+### CI
+
+* add synchronize to PR workflow ([#693](https://github.com/technology-studio/error-handler-peer/issues/693)) ([a51ae2b](https://github.com/technology-studio/error-handler-peer/commit/a51ae2b26903ab040ed33c5d562cb3a588e93425))
+* update pr and release workflows ([#691](https://github.com/technology-studio/error-handler-peer/issues/691)) ([45022d4](https://github.com/technology-studio/error-handler-peer/commit/45022d4903e101d7fd44870b4f3866856165175d))
+
+
+### Bug fixes
+
+* add `listenerErrorList` and handle crashed listeners ([#700](https://github.com/technology-studio/error-handler-peer/issues/700)) ([a9069dd](https://github.com/technology-studio/error-handler-peer/commit/a9069dd2c005a8af7a3074d74c47d29b7973f18d))
+
 ## [2.0.0](https://github.com/technology-studio/error-handler-peer/compare/v1.2.29...v2.0.0) (2024-10-28)
 
 
