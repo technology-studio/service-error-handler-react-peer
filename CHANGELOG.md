@@ -1,3 +1,10 @@
+## [3.1.0](https://github.com/technology-studio/error-handler-peer/compare/v3.0.0...v3.1.0) (2024-11-29)
+
+
+### Features
+
+* add `VALIDATION_ERROR` ([#702](https://github.com/technology-studio/error-handler-peer/issues/702)) ([55bd48e](https://github.com/technology-studio/error-handler-peer/commit/55bd48e66409c1442e247e76f85bc5e494e314cd))
+
 ## [2.0.1](https://github.com/technology-studio/error-handler-peer/compare/v2.0.0...v2.0.1) (2024-11-28)
 
 
