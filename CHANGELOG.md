@@ -1,3 +1,10 @@
+## [3.1.1](https://github.com/technology-studio/error-handler-peer/compare/v3.1.0...v3.1.1) (2024-12-18)
+
+
+### Bug fixes
+
+* remove unused react packages ([#720](https://github.com/technology-studio/error-handler-peer/issues/720)) ([a7b4027](https://github.com/technology-studio/error-handler-peer/commit/a7b40277f34a71f3a5c8ced7062ab2d1719a2a32))
+
 ## [3.1.0](https://github.com/technology-studio/error-handler-peer/compare/v3.0.0...v3.1.0) (2024-11-29)
 
 
