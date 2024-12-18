@@ -1,4 +1,4 @@
 module.exports = (async function config() {
-  const txoPackageReactConfigList = await import('eslint-config-txo-package-react')
+  const txoPackageReactConfigList = await import('eslint-config-txo-package-typescript')
   return txoPackageReactConfigList.configList
 })()
